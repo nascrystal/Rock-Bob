@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock&Bob Cafe - Онлайн-меню</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Rock&Bob Logo" class="logo-img">
+        <h1 class="logo-text">
+          <span class="rock">Rock</span>
+          <span class="and">&</span>
+          <span class="bob">Bob</span>
+          <span class="cafe"> cafe</span>
+        </h1>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <i class="fas fa-bars"></i>
+      </label>
+      <nav class="main-nav">
+        <a href="#drinks" class="nav-link"><i class="fas fa-coffee"></i> Drinks</a>
+        <a href="#desserts" class="nav-link"><i class="fas fa-cake"></i> Desserts</a>
+        <a href="#about" class="nav-link"><i class="fas fa-info-circle"></i> About Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-image">
+      <img src="img/baner.jpg" alt="Cafe Interior">
+    </div>
+    <div class="container hero-content">
+      <h2 class="hero-title">
+        <span class="rock">Rock</span> Your Taste Buds
+      </h2>
+      <p class="hero-subtitle">
+        Experience the perfect blend of music and flavor at Rock&Bob cafe
+      </p>
+      <button class="btn btn-primary">View Our Menu</button>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu-section container">
+    <div class="tabs">
+      <input type="radio" name="tabs" id="tab-drinks" checked>
+      <input type="radio" name="tabs" id="tab-desserts">
+      
+      <div class="tabs-nav">
+        <label for="tab-drinks" class="tab-trigger">
+          <i class="fas fa-coffee"></i> Drinks
+        </label>
+        <label for="tab-desserts" class="tab-trigger">
+          <i class="fas fa-cake"></i> Desserts
+        </label>
+      </div>
+
+      <!-- Drinks Tab -->
+      <div class="tab-content" id="drinks">
+        <h2 class="section-title">
+          <span class="rock">Rock</span> Inspired Drinks
+        </h2>
+        <div class="menu-grid">
+          <!-- Drink Item 1 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/1.jpg" alt="Black Sabbath Espresso">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Black Sabbath Espresso</h3>
+                <span class="menu-item-price">$3.99</span>
+              </div>
+              <p class="menu-item-description">Strong, dark espresso with a powerful kick, just like the legendary band.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Drink Item 2 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/2.jpg" alt="Guns N' Roses Latte">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Guns N' Roses Latte</h3>
+                <span class="menu-item-price">$4.99</span>
+              </div>
+              <p class="menu-item-description">Sweet and wild latte with rose-infused syrup and a hint of cinnamon.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Drink Item 3 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/3.jpg" alt="Metallica Mocha">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Metallica Mocha</h3>
+                <span class="menu-item-price">$5.49</span>
+              </div>
+              <p class="menu-item-description">Heavy-hitting mocha with dark chocolate and a double shot of espresso.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Drink Item 4 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/4.jpg" alt="Pink Floyd Frappe">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Pink Floyd Frappe</h3>
+                <span class="menu-item-price">$6.49</span>
+              </div>
+              <p class="menu-item-description">A psychedelic blend of coffee, ice cream, and colorful syrups.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Drink Item 5 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/1.jpg" alt="AC/DC Thunder Tea">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">AC/DC Thunder Tea</h3>
+                <span class="menu-item-price">$3.49</span>
+              </div>
+              <p class="menu-item-description">Electrifying black tea with lemon and a high-voltage caffeine kick.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Drink Item 6 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/2.jpg" alt="Queen Royal Chai">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Queen Royal Chai</h3>
+                <span class="menu-item-price">$4.99</span>
+              </div>
+              <p class="menu-item-description">Majestic chai latte with exotic spices fit for rock royalty.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desserts Tab -->
+      <div class="tab-content" id="desserts">
+        <h2 class="section-title">
+          <span class="rock">Rocking</span> Desserts
+        </h2>
+        <div class="menu-grid">
+          <!-- Dessert Item 1 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/1.jpg" alt="Stairway to Heaven Cake">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Stairway to Heaven Cake</h3>
+                <span class="menu-item-price">$6.99</span>
+              </div>
+              <p class="menu-item-description">Seven-layer cake that takes your taste buds on an epic journey.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dessert Item 2 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/2.jpg" alt="Sweet Emotion Cheesecake">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Sweet Emotion Cheesecake</h3>
+                <span class="menu-item-price">$5.99</span>
+              </div>
+              <p class="menu-item-description">Creamy New York-style cheesecake with berry compote.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dessert Item 3 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/2.jpg" alt="Bohemian Raspberry Tart">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Bohemian Raspberry Tart</h3>
+                <span class="menu-item-price">$4.99</span>
+              </div>
+              <p class="menu-item-description">Free-spirited tart with fresh raspberries and a buttery crust.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dessert Item 4 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/4.jpg" alt="Paradise City Pie">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Paradise City Pie</h3>
+                <span class="menu-item-price">$5.49</span>
+              </div>
+              <p class="menu-item-description">Apple pie with caramel drizzle that'll take you to where the grass is green.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dessert Item 5 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/3.jpg" alt="Rock You Like a Hurricane Brownie">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Rock You Like a Hurricane Brownie</h3>
+                <span class="menu-item-price">$4.49</span>
+              </div>
+              <p class="menu-item-description">Intense chocolate brownie with a molten center that'll blow you away.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+
+          <!-- Dessert Item 6 -->
+          <div class="menu-item">
+            <div class="menu-item-image">
+              <img src="img/1.jpg" alt="Hotel California Tiramisu">
+            </div>
+            <div class="menu-item-content">
+              <div class="menu-item-header">
+                <h3 class="menu-item-title">Hotel California Tiramisu</h3>
+                <span class="menu-item-price">$6.49</span>
+              </div>
+              <p class="menu-item-description">Coffee-soaked ladyfingers with mascarpone cream - you can check out but never leave.</p>
+              <button class="btn btn-primary btn-full">
+                <i class="fas fa-shopping-cart"></i> Order Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2 class="section-title">
+        About <span class="rock">Rock&Bob</span> Cafe
+      </h2>
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="about-text">
+            Rock&Bob Cafe was founded in 2018 by two music enthusiasts who wanted to create a space where people
+            could enjoy great coffee and food while immersed in rock culture.
+          </p>
+          <p class="about-text">
+            Our cafe features regular live acoustic sessions, a curated playlist of rock classics, and a menu
+            inspired by legendary musicians.
+          </p>
+          <p class="about-text">
+            We source our coffee beans from sustainable farms and prepare all our desserts in-house daily to ensure
+            the highest quality.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="img/about.jpg" alt="Cafe Interior">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-column">
+          <h3 class="footer-title">Rock&Bob Cafe</h3>
+          <p>123 Music Avenue</p>
+          <p>Rock City, RC 10101</p>
+          <p>Phone: (555) 123-4567</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Hours</h3>
+          <p>Monday - Friday: 7:00 AM - 10:00 PM</p>
+          <p>Saturday: 8:00 AM - 11:00 PM</p>
+          <p>Sunday: 8:00 AM - 9:00 PM</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">Follow Us</h3>
+          <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> Rock&Bob Cafe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
